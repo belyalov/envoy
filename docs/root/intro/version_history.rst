@@ -3,6 +3,8 @@ Version history
 
 1.15.0 (Pending)
 ================
+* grpc-json: added support for streaming response using
+  `google.api.HttpBody <https://github.com/googleapis/googleapis/blob/master/google/api/httpbody.proto>`_.
 
 1.14.1 (April 8, 2020)
 ======================
@@ -37,8 +39,6 @@ Version history
   Can be reverted temporarily by setting runtime feature `envoy.reloadable_features.ext_authz_http_service_enable_case_sensitive_string_matcher` to false.
 * fault: added support for controlling abort faults with :ref:`HTTP header fault configuration <config_http_filters_fault_injection_http_header>` to the HTTP fault filter.
 * grpc-json: added support for building HTTP request into
-  `google.api.HttpBody <https://github.com/googleapis/googleapis/blob/master/google/api/httpbody.proto>`_.
-* grpc-json: added support for streaming response using
   `google.api.HttpBody <https://github.com/googleapis/googleapis/blob/master/google/api/httpbody.proto>`_.
 * grpc-stats: add options to limit which messages stats are created for.
 * http: added HTTP/1.1 flood protection. Can be temporarily disabled using the runtime feature `envoy.reloadable_features.http1_flood_protection`
